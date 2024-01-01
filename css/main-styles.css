@@ -1,0 +1,65 @@
+.dropdown-item:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.dropdown-menu {
+    border-radius: unset;
+    padding: 0%;
+    
+}
+
+.bg-theme-colour {
+    background-color: rgb(0, 102, 0)
+}
+
+.bg-theme-light {
+    background-color: #f2f5f0;
+}
+
+.bg-theme-colour-2 {
+    background-color: #68bb59;
+}
+
+.bg-theme-black {
+    background-color: black;
+}
+
+
+.bg-theme-black-0 {
+    background-color: rgba(0, 0, 0, 0.92);
+}
+
+.nav-link:hover {
+    color:azure;
+}
+
+footer > a {
+    color:black !important;
+}
+
+
+.list-border li {
+    border-bottom: 1px dashed rgba(154, 152, 152, 0.314)
+}
+
+
+.line-bottom-theme-colored-1 {
+    border-bottom: 1px solid rgb(25,135,84);
+    position: relative;
+        
+}
+
+.line-bottom-theme-colored-1::after{
+    width: 50%;
+}
+
+.list-none {
+    list-style: none;
+}
+
+nav li a:hover {
+    background-color: white;
+    color: black !important;    
+    border-radius: 1rem;
+}
