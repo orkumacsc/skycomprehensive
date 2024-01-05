@@ -18,7 +18,7 @@
     <!-- JS Scripts -->
     <script src="js/all.min.js"></script>  
 </head>
-<body class="grid">
+<body>
     <header>
         <div class="mb-3 pt-3 text-center">
             <div class="container">
@@ -49,28 +49,38 @@
         </div>
     </header>
     <main>
-        <div class="main-wrapper py-5 bg-dark">
+        <div class="main-wrapper py-5 px-2 bg-dark">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4 bg-theme-colour-3 p-5">
-                        <form action="#" method="post">
+                    <div class="col-md-6 col-lg-4 border p-5">
+                        <form action="controllers/Auth/Login.php" method="post">
                             <fieldset>
-                                <legend class="fs-3 mb-3 text-bold text-center text-black">Student Login</legend>
+                                <legend class="fs-3 mb-3 text-bold text-center text-white-50">Student Login</legend>
                                 <div class="mb-3">
-                                    <label for="admission_no" class="form-label text-black">Admission No</label>
-                                    <input type="text" name="admission_no" required placeholder="Admission Number" class="form-control form-control-md">
+                                    <label for="admission_no" class="visually-hidden">Admission No</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text bg-theme-colour-3 text-white-50 border-0"><i class="fa fa-user"></i></div>
+                                        <input type="text" name="admission_no" placeholder="Admission No" required class="form-control text-white-50 bg-theme-colour-3 border-0">
+                                    </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="password" class="form-label text-black">Password</label>
-                                    <input type="password" name="password" required placeholder="Password" class="form-control form-control-md">
+                                    <label for="password" class="visually-hidden">Password</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text bg-theme-colour-3 text-white-50 border-0"><i class="fa fa-key"></i></div>
+                                        <input type="password" name="password" placeholder="Password" required class="form-control text-white-50 bg-theme-colour-3 border-0">
+                                    </div>
                                 </div>
-                                <div class="row align-items-center mt-4 text-center">
+                                <div class="row align-items-center mt-2 text-center">
                                     <div class="col-sm-6">
-                                        <button type="submit" class="btn btn-success form-control-md form-control">Login</button>
+                                        <label for="remember_me" class="form-label text-white-50">Remember Me</label>                                        
+                                        <input type="checkbox" name="remember_me" id="remember_me">
                                     </div>
                                     <div class="col-sm-6 mt-3 mt-md-0">
-                                        <a class="text-decoration-none text-black fs-5" href="reset_password.html">Forgot Password?</a>
+                                        <a class="text-decoration-none text-white-50" href="reset_password.html">Forgot Password?</a>
                                     </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <button type="submit" class="btn btn-success form-control-md form-control">Login</button>
                                 </div>
                             </fieldset>
                         </form>

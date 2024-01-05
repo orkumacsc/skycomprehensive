@@ -52,8 +52,8 @@
         <div class="main-wrapper py-5 bg-dark">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-8 p-lg-5 bg-theme-colour-3">
-                        <form action="#" method="post" autocomplete="on">                            
+                    <div class="col-md-8 px-lg-5">
+                        <form action="admissions.php" method="post" autocomplete="on" enctype="multipart/form-data">                            
                             <h6 class="fs-3 mb-3 text-bold text-center text-white">Student Admission Form</h6>
                             <fieldset class="border rounded-3 p-3">
                                 <legend class="float-none w-auto p-1 text-white">Personal Data</legend>
@@ -63,15 +63,15 @@
                                             <div class="border rounded-3 mb-3 text-center mx-auto pt-1" style="height: 210px; width: 160px;"  id="passport">
                                                 <img src="img/student_passport.jpg" alt="">
                                             </div>
-                                            <input type="file" name="passport" required  class="form-control form-control-md text-center">
+                                            <input type="file" name="passport" required  class="form-control form-control-md text-center bg-theme-colour-3 text-white-50 border-0" id="formFile">
                                         </div>
                                         <div class="col-lg-9">
                                             <div class="row">
                                                 <div class="col">
                                                     <label for="surname" class="visually-hidden">Surname</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Surname</div>
-                                                        <input type="text" name="surname" required placeholder="Surname" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Surname</div>
+                                                        <input type="text" name="surname" required class="form-control form-control-md bg-theme-colour-3 border-0 text-white-50">
                                                     </div>
                                                 </div>
                                             </div>
@@ -79,8 +79,8 @@
                                                 <div class="col mt-3">
                                                     <label for="firstname" class="visually-hidden">First Name</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">First Name</div>
-                                                        <input type="text" name="firstname" required placeholder="First Name" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">First Name</div>
+                                                        <input type="text" name="firstname" required class="form-control form-control-md bg-theme-colour-3 border-0 text-white-50">
                                                     </div>
                                                 </div>
                                             </div>  
@@ -88,8 +88,8 @@
                                                 <div class="col mt-3">
                                                     <label for="othername" class="visually-hidden">Other Name</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Other Name</div>
-                                                        <input type="text" name="othername" required placeholder="Other Name" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Other Name</div>
+                                                        <input type="text" name="othername" class="form-control form-control-md bg-theme-colour-3 border-0 text-white-50">
                                                     </div>
                                                 </div>
                                             </div>
@@ -97,15 +97,16 @@
                                                 <div class="col-lg-7 mt-3">
                                                     <label for="firstname" class="visually-hidden">Date of Birth</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Date of Birth</div>
-                                                        <input type="date" name="birthdate" required class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Date of Birth</div>
+                                                        <input type="date" name="birthdate" required class="form-control form-control-md bg-theme-colour-3 border-0 text-white-50">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5 mt-3">
                                                     <label for="firstname" class="visually-hidden">Gender</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Gender</div>
-                                                        <select name="gender" id="gender" class="form-control">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Gender</div>
+                                                        <select name="gender" id="gender" class="form-select bg-theme-colour-3 border-0 text-white-50">
+                                                            <option selected>Select Gender</option>
                                                             <option value="Male">Male</option>
                                                             <option value="Female">Female</option>
                                                         </select>
@@ -116,8 +117,8 @@
                                                 <div class="col mt-3">
                                                     <label for="place-of-birth" class="visually-hidden">Place of Birth</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Place of Birth</div>
-                                                        <input type="text" name="place-of-birth" required placeholder="Place of Birth" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Place of Birth</div>
+                                                        <input type="text" name="place-of-birth" required  class="form-control form-control-md bg-theme-colour-3 border-0 text-white-50">
                                                     </div>
                                                 </div>
                                             </div>                                            
@@ -135,8 +136,8 @@
                                                 <div class="col">
                                                     <label for="surname" class="visually-hidden">Surname</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Surname</div>
-                                                        <input type="text" name="surname" required placeholder="Surname" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Surname</div>
+                                                        <input type="text" name="surname" required class="form-control form-control-md border-0 bg-theme-colour-3 text-white-50">
                                                     </div>
                                                 </div>
                                             </div>
@@ -144,8 +145,8 @@
                                                 <div class="col mt-3">
                                                     <label for="firstname" class="visually-hidden">First Name</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">First Name</div>
-                                                        <input type="text" name="firstname" required placeholder="First Name" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">First Name</div>
+                                                        <input type="text" name="firstname" required  class="form-control form-control-md border-0 bg-theme-colour-3 text-white-50">
                                                     </div>
                                                 </div>
                                             </div>  
@@ -153,8 +154,8 @@
                                                 <div class="col mt-3">
                                                     <label for="othername" class="visually-hidden">Other Name</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Other Name</div>
-                                                        <input type="text" name="othername" required placeholder="Other Name" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Other Name</div>
+                                                        <input type="text" name="othername"  class="form-control form-control-md border-0 bg-theme-colour-3 text-white-50">
                                                     </div>
                                                 </div>
                                             </div>
@@ -162,15 +163,15 @@
                                                 <div class="col-lg-7 mt-3">
                                                     <label for="occupation" class="visually-hidden">Occupation</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Occupation</div>
-                                                        <input type="text" name="occupation" required placeholder="Occupation" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Occupation</div>
+                                                        <input type="text" name="occupation" required  class="form-control form-control-md border-0 bg-theme-colour-3 text-white-50">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5 mt-3">
                                                     <label for="firstname" class="visually-hidden">Relationship</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Relationship</div>
-                                                        <select name="gender" id="gender" class="form-control">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Relationship</div>
+                                                        <select name="gender" id="gender" class="form-control border-0 bg-theme-colour-3 text-white-50">
                                                             <option value="Father">Father</option>
                                                             <option value="Mother">Mother</option>
                                                             <option value="Uncle">Uncle</option>
@@ -185,15 +186,15 @@
                                                 <div class="col-lg-7 mt-3">
                                                     <label for="firstname" class="visually-hidden">eMail</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">eMail</div>
-                                                        <input type="email" name="email" required placeholder="eMail" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">eMail</div>
+                                                        <input type="email" name="email" required class="form-control form-control-md border-0 bg-theme-colour-3 text-white-50">
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5 mt-3">
                                                     <label for="mobile_no" class="visually-hidden">Mobile No</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Mobile No</div>
-                                                        <input type="text" name="mobile_no" required placeholder="Mobiel No" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Mobile No</div>
+                                                        <input type="text" name="mobile_no" required rrequired class="form-control form-control-md border-0 bg-theme-colour-3 text-white-50">
                                                     </div>
                                                 </div>                                                
                                             </div>   
@@ -201,8 +202,8 @@
                                                 <div class="col mt-3">
                                                     <label for="place-of-birth" class="visually-hidden">Address</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Address</div>
-                                                        <input type="text" name="address" required placeholder="Address" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Address</div>
+                                                        <input type="text" name="address" required class="form-control form-control-md border-0 bg-theme-colour-3 text-white-50">
                                                     </div>
                                                 </div>
                                             </div>                                            
@@ -220,8 +221,8 @@
                                                 <div class="col">
                                                     <label for="previous_school" class="visually-hidden">Previous School Attended</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Previous School Attended</div>
-                                                        <input type="text" name="previous_school" required placeholder="Previous School Attended" class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Previous School Attended</div>
+                                                        <input type="text" name="previous_school" required class="form-control form-control-md bg-theme-colour-3 text-white-50 border-0 shadow-none">
                                                     </div>
                                                 </div>
                                             </div>
@@ -229,8 +230,8 @@
                                                 <div class="col mt-3">
                                                     <label for="previous_class" class="visually-hidden">Previous Class</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Previous Class</div>
-                                                        <select name="previous_class" id="previous_class" class="form-control">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Previous Class</div>
+                                                        <select name="previous_class" id="previous_class" class="form-control bg-theme-colour-3 text-white-50 border-0">
                                                             <option value="#">-- Select Previous Class --</option>
                                                             <option value="Basic 7">Basic 5 (Primary Five )</option>
                                                             <option value="Basic 7">Basic 6 (Primary Six )</option>
@@ -249,8 +250,8 @@
                                                 <div class="col-lg-5 mt-3">
                                                     <label for="result_obtained" class="visually-hidden">Result Obtained</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Result Obtained</div>
-                                                        <select name="result_obtained" id="result_obtained" class="form-control">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Result Obtained</div>
+                                                        <select name="result_obtained" id="result_obtained" class="form-control bg-theme-colour-3 text-white-50 border-0">
                                                             <option value="fsls">FSLC</option>
                                                             <option value="bece_jsce">BECE/JSCE</option>
                                                             <option value="termly_result">Termly Result</option>
@@ -261,8 +262,8 @@
                                                 <div class="col-lg-7 mt-3">
                                                     <label for="result_uploaded" class="visually-hidden">Attach Result</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Attach Result</div>
-                                                        <input type="file" name="result_uploaded" required  class="form-control form-control-md">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Attach Result</div>
+                                                        <input type="file" name="result_uploaded" required  class="form-control form-control-md bg-theme-colour-3 text-white-50 border-0">
                                                     </div>
                                                 </div>
                                             </div>
@@ -270,8 +271,8 @@
                                                 <div class="col mt-3">
                                                     <label for="class" class="visually-hidden">Admisssion Class</label>
                                                     <div class="input-group">
-                                                        <div class="input-group-text bg-theme-colour-3">Admisssion Class</div>
-                                                        <select name="result_obtained" id="result_obtained" class="form-control">
+                                                        <div class="input-group-text bg-theme-colour-3 border-0 text-white-50">Admisssion Class</div>
+                                                        <select name="result_obtained" id="result_obtained" class="form-control bg-theme-colour-3 border-0 text-white-50">
                                                             <option value="#">-- Select Admisssion Class --</option>
                                                             <option value="Basic 7">Basic 7 (JSS 1)</option>
                                                             <option value="Basic 8">Basic 8 (JSS 2)</option>
@@ -287,6 +288,9 @@
                                     </div> 
                                 </div> 
                             </fieldset>
+                            <div class="col-4 mt-3 float-end">
+                                <button type="submit" class="btn btn-success w-50">Submit</button>
+                            </div>
                         </form>
                     </div>                    
                 </div>
